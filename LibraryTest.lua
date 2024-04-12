@@ -2,10 +2,10 @@ wait(2)
 local RS = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
-local table = require(RS["Custom functions"].table)
-local Ad = require(script["Ad functions"]); print(Ad)
-local Library = require(script.Library)
-local Settings = require(script.Settings)
+local table = loadstring(game:HttpGet(('https://raw.githubusercontent.com/13Works/CustomFunctions/main/table.lua'),true))()
+local Ad = loadstring(game:HttpGet(('https://raw.githubusercontent.com/13Works/AdFunctions/main/Ad.lua'),true))(); print(Ad)
+local Library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/13Works/AdFunctions/main/Library.lua'),true))()
+local Settings = {}
 
 local LocalPlayer = Players.LocalPlayer
 local PlayerGui = LocalPlayer.PlayerGui
